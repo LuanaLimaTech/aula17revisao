@@ -68,5 +68,29 @@ btn_calcular.addEventListener('Click', calcular);
         console.log(notas[posicao]);
     }
     
+    let total = 0;
+    for(let posicao = 0; posicao < notas.length;posicao++){
+    total = total +notas[posicao];
+
+    }
+    
+    console.log(total);
+    // MAIOR NOTA
+    let MAIOR = 0;
+    for(let posicao = 0; posicao < notas.length;posicao++){
+            if(notas[posicao] > maior) {
+                maior = notas[posicao];
+            }
+    }
+
+    let menor = 10;
+    for(let posicao = 0; posicao < notas.length; posicao++) {
+        if(notas[posicao] < menor){
+            menor = notas[posicao];
+        }
+    }
+    
+    console.log(total);
+    
 
     
