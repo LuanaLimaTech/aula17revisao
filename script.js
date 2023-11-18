@@ -91,6 +91,20 @@ btn_calcular.addEventListener('Click', calcular);
     }
     
     console.log(total);
-    
+
+    const meida = total / 4;
+
+    document.write("TOTAL DAS NOTAS" + total + "<br/>");
+    document.write("MEDIA DAS NOTAS" + media + "<br/>");
+    document.write("MAIOR NOTA" + media + "<br/>");
+    document.write("MENOR NOTA" + media + "<br/>");
+
+    const falta_pontos = total - 28;
+
+    if(falta_pontos > 0) {
+        document.write("SOBRARAM: " + falta_pontos  + " PONTOS<br />");
+    } else {
+        document.write("FALTAM: " + falta_pontos  + " PONTOS <br />");
+    }
 
     
